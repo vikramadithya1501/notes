@@ -7,8 +7,8 @@
       name: nginx
       state: present
 
-- name: run nginx
-  tasks: 
+
+  
   - name: run nginx
     ansible.builtin.service:
       name: nginx
