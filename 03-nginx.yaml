@@ -8,10 +8,9 @@
       state: present
 
 - name: run nginx
-  hosts: web
-  tasks:
+  tasks: 
   - name: run nginx
     ansible.builtin.service:
       name: nginx
       state: started
-      enabled: yes    
+      enabled: yes  
