@@ -11,11 +11,11 @@
 
   - name: print the information again
     vars: 
-    COURSE: "Ansible"
+      COURSE: "Ansible"
     ansible.builtin.debug:
       msg:  I am learning {{COURSE}}, DURATION is {{DURATION}}, TRAINER IS {{TRAINER}}
 
   - name: print the information again and again
     ansible.builtin.debug:
       msg: I mam learning {{COURSE}}, DURATION is {{DURATION}}, TRAINER is {{TRAINER}}
-          
+      
