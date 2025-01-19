@@ -1,12 +1,13 @@
 - name: variables to print
   hosts: web
-  vars:
-   COURSE: Devops with AWS
-   DURATION: 120 HRS
-   TRAINER: Sivakumar reddy
+  vars: 
+    COURSE: Devops with AWS
+    DURATION: 120 HRS
+    TRAINER: Sivakumar reddy
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: I am learning {{COURSE}},DURATION is {{DURATION}}, TRAINER is {{TRAINER}}
+      msg: I am learing {{COURSE}}, DURATION is {{DURATION}}, TRAINER is {{TRAINER}}
+      
 
 
