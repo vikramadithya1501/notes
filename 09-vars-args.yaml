@@ -1,0 +1,7 @@
+- name: print the varaible from the arguments
+  hosts: web
+  tasks:
+  - name: print the information
+    ansible.builting.debug:
+      msg: Hello {{NAME}}, GOOD {{GREETING}}
+      
