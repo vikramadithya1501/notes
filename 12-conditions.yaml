@@ -13,6 +13,6 @@
 
   - name: print this if greater than or equal to 10
     ansible.builtin.debug:
-      msg: Given number is {{my number}}, greater than or equal to 10
+      msg: Given number is {{my_number}}, greater than or equal to 10
     when: my_number | int >= 10
     
