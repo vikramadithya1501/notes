@@ -5,3 +5,9 @@
   - name: print the default variables
     ansible.builtin.debug:
       msg: "Hello {{ course | default ('Ansible') }}"
+
+  - name: convert to upper case
+    vars:
+      greeting: "hello ramesh"
+    ansible.builtin.debug:
+      msg: "{{ greeting | upper }}"
